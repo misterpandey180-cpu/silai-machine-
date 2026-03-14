@@ -3,259 +3,240 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Silai Machine Operator Training Center</title>
-
+<title>Sewing Machine Operator Training</title>
 <style>
-
+/* Reset & General Styles */
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-font-family: Arial, sans-serif;
-background:#f5f5f5;
+    background:#f2f2f2;
+    color:#111;
 }
 
-/* HEADER */
-
-header{
-background:#b83227;
-color:white;
-padding:20px;
-text-align:center;
-font-size:22px;
-letter-spacing:1px;
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#333;
+    color:white;
 }
 
-/* HERO SECTION */
+nav h1{
+    font-size:20px;
+}
 
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00aaff;
+}
+
+/* Hero Section */
 .hero{
-height:420px;
-background:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
+    padding:60px 20px;
+    text-align:center;
+    background:#00aaff;
+    color:white;
 }
 
 .hero h1{
-font-size:45px;
+    font-size:36px;
+    margin-bottom:15px;
 }
 
 .hero p{
-margin-top:10px;
-font-size:20px;
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto 20px auto;
 }
 
-/* CONTAINER */
-
-.container{
-width:85%;
-margin:auto;
-padding:60px 0;
+/* Buttons */
+.btn{
+    padding:10px 25px;
+    margin:5px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
 }
 
-/* SECTION */
-
-.section{
-margin-bottom:60px;
+.btn-primary{
+    background:#fff;
+    color:#00aaff;
+    font-weight:bold;
 }
 
-.section h2{
-color:#b83227;
-margin-bottom:20px;
-font-size:28px;
+.btn-outline{
+    background:transparent;
+    border:2px solid #fff;
+    color:white;
 }
 
-/* CARDS */
+.btn-primary:hover,
+.btn-outline:hover{
+    opacity:0.8;
+}
 
-.card-container{
-display:flex;
-flex-wrap:wrap;
-gap:25px;
+/* Training Section */
+.training{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.training h2{
+    font-size:28px;
+    margin-bottom:30px;
+    color:#00aaff;
+}
+
+.training-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
 }
 
 .card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 6px 15px rgba(0,0,0,0.15);
-flex:1 1 250px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 
 .card h3{
-color:#b83227;
-margin-bottom:10px;
+    margin-bottom:10px;
+    font-size:18px;
 }
 
-/* IMAGE SECTION */
-
-.image-section{
-height:350px;
-background:
-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url("https://images.unsplash.com/photo-1581578731548-c64695cc6952");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:35px;
-font-weight:bold;
-text-align:center;
+/* Contact Section */
+.contact{
+    padding:60px 20px;
+    text-align:center;
 }
 
-/* FACILITIES */
-
-.facilities{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.contact h2{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#00aaff;
 }
 
-.facilities ul{
-margin-left:20px;
-line-height:2;
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:400px;
+    margin:auto;
 }
 
-/* FOOTER */
+.contact input, .contact textarea{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
 
+/* Footer */
 footer{
-background:#b83227;
-color:white;
-text-align:center;
-padding:15px;
+    text-align:center;
+    padding:20px;
+    background:#333;
+    color:white;
+    font-size:14px;
+}
+
+.hero{
+    padding:60px 20px;
+    text-align:center;
+
+    /* Background image + overlay */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('Capture5.PNG') no-repeat center center;
+    background-size: cover;
+    color:white;
+    border-radius: 10px;
+}
+img {
+  width: 1000px;  /* adjust width */
+  height: 400px; /* adjust height */
+  object-fit: cover; /* maintain aspect ratio without stretching */
 }
 
 </style>
 </head>
-
 <body>
 
-<header>
-Silai Machine Operator Training Center
-</header>
+<!-- Navbar -->
+<nav>
 
-<!-- HERO -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#training-info">Training Info</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-<div class="hero">
-<div>
-<h1>Professional Silai Training</h1>
-<p>Learn Sewing Machine Skills & Start Your Career</p>
-</div>
-</div>
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Sewing Machine Operator</h1>
+    <p>Learn basic sewing machine skills including stitching, fabric handling, and maintenance.</p>
+    <div>
+        <a href="#training-info" class="btn btn-primary">Learn More</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+</section>
 
-<div class="container">
+<!-- Training Info Section -->
+<section id="training-info" class="training">
+    <h2>Training Details</h2>
+    <div class="training-container">
+        <div class="card">
+            <h3>Course Overview</h3>
+            <p>Beginner-friendly course covering basic sewing machine operations and techniques.</p>
+        </div>
+        <div class="card">
+            <h3>Skills You Will Learn</h3>
+            <ul>
+                <li>Operating sewing machines</li>
+                <li>Fabric handling</li>
+                <li>Stitching techniques</li>
+                <li>Basic machine maintenance</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Duration & Schedule</h3>
+            <p>4 weeks, 2 hours daily. Flexible timing available.</p>
+        </div>
+        <div class="card">
+            <h3>Certification</h3>
+            <p>Certificate awarded upon completion.</p>
+        </div>
+    </div>
 
-<!-- ABOUT -->
+<img width="100%" src="Capture2.PNG" />
 
-<div class="section">
-<h2>About Our Training Center</h2>
-<p>
-Our Silai Machine Operator Training Center provides professional
-training in garment stitching and sewing machine operation.
-We focus on practical training so students can easily work
-in garment factories, tailoring shops, and fashion industries.
-</p>
-</div>
 
-<!-- COURSES -->
 
-<div class="section">
 
-<h2>Popular Training Programs</h2>
-
-<div class="card-container">
-
-<div class="card">
-<h3>Basic Sewing Machine</h3>
-<p>Learn how to operate sewing machines and maintain them properly.</p>
-</div>
-
-<div class="card">
-<h3>Garment Stitching</h3>
-<p>Training for stitching shirts, pants, uniforms and dresses.</p>
-</div>
-
-<div class="card">
-<h3>Fabric Cutting</h3>
-<p>Learn measurement and fabric cutting techniques.</p>
-</div>
-
-<div class="card">
-<h3>Quality Checking</h3>
-<p>Learn garment finishing and quality control skills.</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- IMAGE SECTION -->
-
-<div class="image-section">
-Become a Skilled Silai Machine Operator
-</div>
-
-<div class="container">
-
-<!-- FACILITIES -->
-
-<div class="section">
-
-<h2>Facilities</h2>
-
-<div class="facilities">
-
-<ul>
-<li>Modern Sewing Machine Training Lab</li>
-<li>Experienced Garment Trainers</li>
-<li>Practical Stitching Training</li>
-<li>Certification Programs</li>
-<li>Placement Assistance in Garment Companies</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<!-- WHY CHOOSE -->
-
-<div class="section">
-
-<h2>Why Choose Us?</h2>
-
-<p>
-We provide industry level training with real garment practice.
-Our mission is to develop skilled sewing machine operators
-who can work efficiently in garment factories and tailoring units.
-</p>
-
-</div>
-
-</div>
-
+<!-- Footer -->
 <footer>
-
-© 2026 Silai Machine Operator Training Center | All Rights Reserved
-
+    © 2026 Cradle Life Science Pvt Ltd | All Rights Reserved
 </footer>
 
 </body>
