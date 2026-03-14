@@ -7,35 +7,108 @@
 
 <style>
 
-body{
-font-family: Arial, sans-serif;
+*{
 margin:0;
-background:#f4f7fb;
+padding:0;
+box-sizing:border-box;
 }
 
+body{
+font-family: Arial, sans-serif;
+background:#f5f5f5;
+}
+
+/* HEADER */
+
 header{
-background:#c05621;
+background:#b83227;
 color:white;
 padding:20px;
 text-align:center;
+font-size:22px;
+letter-spacing:1px;
 }
 
-nav{
-background:#9c4221;
-padding:10px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-}
+/* HERO SECTION */
 
 .hero{
-background:url('https://images.unsplash.com/photo-1593032465171-8e6c3f4c2f90') center/cover;
-height:300px;
+height:420px;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+margin-top:10px;
+font-size:20px;
+}
+
+/* CONTAINER */
+
+.container{
+width:85%;
+margin:auto;
+padding:60px 0;
+}
+
+/* SECTION */
+
+.section{
+margin-bottom:60px;
+}
+
+.section h2{
+color:#b83227;
+margin-bottom:20px;
+font-size:28px;
+}
+
+/* CARDS */
+
+.card-container{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+flex:1 1 250px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#b83227;
+margin-bottom:10px;
+}
+
+/* IMAGE SECTION */
+
+.image-section{
+height:350px;
+background:
+linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1581578731548-c64695cc6952");
+background-size:cover;
+background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -45,41 +118,27 @@ font-weight:bold;
 text-align:center;
 }
 
-.container{
-width:85%;
-margin:auto;
-padding:40px 0;
-}
+/* FACILITIES */
 
-.section{
-margin-bottom:40px;
-}
-
-.section h2{
-color:#c05621;
-margin-bottom:15px;
-}
-
-.card-container{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-}
-
-.card{
+.facilities{
 background:white;
-padding:20px;
+padding:30px;
 border-radius:10px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
-flex:1 1 250px;
 }
 
+.facilities ul{
+margin-left:20px;
+line-height:2;
+}
+
+/* FOOTER */
+
 footer{
-background:#c05621;
+background:#b83227;
 color:white;
 text-align:center;
 padding:15px;
-margin-top:20px;
 }
 
 </style>
@@ -88,81 +147,115 @@ margin-top:20px;
 <body>
 
 <header>
-<h1>Silai Machine Operator Training Center</h1>
+Silai Machine Operator Training Center
 </header>
 
+<!-- HERO -->
+
 <div class="hero">
-Professional Sewing & Garment Training
+<div>
+<h1>Professional Silai Training</h1>
+<p>Learn Sewing Machine Skills & Start Your Career</p>
+</div>
 </div>
 
 <div class="container">
 
+<!-- ABOUT -->
+
 <div class="section">
 <h2>About Our Training Center</h2>
 <p>
-Our Silai Machine Operator Training Center provides professional training
-for sewing machine operation and garment production. We focus on practical
-skills, modern stitching techniques, and industry standards to help
-students build careers in garment factories, tailoring shops, and
-fashion industries.
+Our Silai Machine Operator Training Center provides professional
+training in garment stitching and sewing machine operation.
+We focus on practical training so students can easily work
+in garment factories, tailoring shops, and fashion industries.
 </p>
 </div>
 
+<!-- COURSES -->
+
 <div class="section">
+
 <h2>Popular Training Programs</h2>
 
 <div class="card-container">
 
 <div class="card">
-<h3>Basic Sewing Machine Operation</h3>
-<p>Learn how to operate different types of sewing machines safely.</p>
+<h3>Basic Sewing Machine</h3>
+<p>Learn how to operate sewing machines and maintain them properly.</p>
 </div>
 
 <div class="card">
-<h3>Garment Stitching Techniques</h3>
-<p>Training in stitching shirts, pants, and other garments.</p>
+<h3>Garment Stitching</h3>
+<p>Training for stitching shirts, pants, uniforms and dresses.</p>
 </div>
 
 <div class="card">
-<h3>Fabric Cutting & Measurement</h3>
-<p>Learn proper measurement and fabric cutting techniques.</p>
+<h3>Fabric Cutting</h3>
+<p>Learn measurement and fabric cutting techniques.</p>
 </div>
 
 <div class="card">
-<h3>Quality Control & Finishing</h3>
-<p>Learn how to check garment quality and finishing methods.</p>
+<h3>Quality Checking</h3>
+<p>Learn garment finishing and quality control skills.</p>
 </div>
 
 </div>
+
 </div>
 
-<img width="100%" src="Capture2.PNG" />
+</div>
+
+<!-- IMAGE SECTION -->
+
+<div class="image-section">
+Become a Skilled Silai Machine Operator
+</div>
+
+<div class="container">
+
+<!-- FACILITIES -->
 
 <div class="section">
+
 <h2>Facilities</h2>
+
+<div class="facilities">
+
 <ul>
-<li>Modern Sewing Machine Lab</li>
+<li>Modern Sewing Machine Training Lab</li>
 <li>Experienced Garment Trainers</li>
-<li>Practical Stitching Practice</li>
+<li>Practical Stitching Training</li>
 <li>Certification Programs</li>
-<li>Placement Assistance in Garment Factories</li>
+<li>Placement Assistance in Garment Companies</li>
+
 </ul>
+
 </div>
 
+</div>
+
+<!-- WHY CHOOSE -->
+
 <div class="section">
+
 <h2>Why Choose Us?</h2>
+
 <p>
-We provide high-quality training with real-world garment production
-practice. Our goal is to develop skilled sewing machine operators
-who can work efficiently in garment factories, tailoring units,
-and fashion industries.
+We provide industry level training with real garment practice.
+Our mission is to develop skilled sewing machine operators
+who can work efficiently in garment factories and tailoring units.
 </p>
+
 </div>
 
 </div>
 
 <footer>
-<p>© 2026 Silai Machine Operator Training Center | All Rights Reserved</p>
+
+© 2026 Silai Machine Operator Training Center | All Rights Reserved
+
 </footer>
 
 </body>
